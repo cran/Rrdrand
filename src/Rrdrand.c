@@ -68,9 +68,8 @@ __inline static unsigned int rdrand(void)
     if(has_rdrand()!=1) return (0);
 #if defined(HAVE_X86_CPUID) && HAVE_X86_CPUID == 1
     do{
-    r=0;
-      __asm__ __volatile__ ( ".byte 0x0f,0xc7,0xf0" "\r\n"
-                             "setc %0" : "=qm" (r), "=a" (v));
+      r=0;
+      __asm__ __volatile__ ( ".byte 0x0f,0xc7,0xf0;" "setc %0" : "=qm" (r), "=a" (v));
     }while(r==0);
 #else
     v=0;

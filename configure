@@ -3523,7 +3523,7 @@ main ()
 
      int op = 1, eax, ebx, ecx, edx;
      FILE *f;
-      __asm__ __volatile__("cpuid"
+      __asm__ __volatile__(".byte 0x0f,0xa2" /* cpuid opcode */
         : "=a" (eax), "=b" (ebx), "=c" (ecx), "=d" (edx)
         : "a" (op));
      f = fopen("conftest_cpuid", "w"); if (!f) return 1;
