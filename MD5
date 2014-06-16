@@ -1,0 +1,11 @@
+e2922e6b0065a3cb3498db964f8af3cd *Changelog
+ecd8b0fe3eaa1a5629d87a2cb546f343 *DESCRIPTION
+8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
+313d5d0e82553c18be3375054f84d876 *R/Rrdrand.R
+20c02f1c0a7a212c75d4792489fde3cf *R/zzz.R
+b7aa8199d5f215556302f61bd5e723bc *cleanup
+4a58f9bb4d5d704d739295879ea3763e *configure
+8ad47a93e3d4be6004cb45e846d97bb6 *configure.ac
+c5e921428ed010e53aa52cc4adbd676e *man/Rrdrand-package.Rd
+8162632a1e241695dae6c10aa30067dd *src/Rrdrand.c
+21289dbd41baa93b3046e612fb9534ac *src/config.h.in
