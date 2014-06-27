@@ -29,9 +29,9 @@ hasRDRAND()
   \url{http://prs.ism.ac.jp/~nakama/Rrdrand}
 }
 \author{
-  Ei-ji Nakama<nakama@com-one.com> and Junji Nakano <nakanoj@ism.ac.jp>
+  Eiji NAKAMA <nakama@com-one.com> and Junji NAKANO <nakanoj@ism.ac.jp>
  
-  Maintainer: Ei-ji Nakama <nakama@com-one.com>
+  Maintainer: Eiji NAKAMA <nakama@com-one.com>
 }
 \keyword{utilities}
 \examples{

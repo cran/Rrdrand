@@ -1,11 +1,11 @@
-b823827c4c990d742652494f63cce9cc *Changelog
-d27a601d4a154da20ef6ee83a2c0159e *DESCRIPTION
+205d61d1e504b70d11c5fed8b7e4dedc *Changelog
+12a5648841b3b5ee821e01a190c01688 *DESCRIPTION
 8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
 313d5d0e82553c18be3375054f84d876 *R/Rrdrand.R
 20c02f1c0a7a212c75d4792489fde3cf *R/zzz.R
 b7aa8199d5f215556302f61bd5e723bc *cleanup
 8f2132f99d4d7c75f8bd09aed5e85ba6 *configure
 93570447424474a59b17afc9561f34a1 *configure.ac
-c5e921428ed010e53aa52cc4adbd676e *man/Rrdrand-package.Rd
-770cbff5eda4ff532125ce1a1f729ec9 *src/Rrdrand.c
+546676dd53380d592e75a73d8af30e6a *man/Rrdrand-package.Rd
+29fc777fc4898b614a3e3f99444899fe *src/Rrdrand.c
 21289dbd41baa93b3046e612fb9534ac *src/config.h.in
