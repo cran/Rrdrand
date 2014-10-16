@@ -1,15 +1,13 @@
 .onLoad <- function (lib, pkg) {
   library.dynam("Rrdrand", pkg, lib)
-
   if(hasRDRAND()==TRUE){
     RNGkind("user-supplied")
   }
 
-  ## skip warning loading test time
-  if(Sys.getenv("R_PACKAGE_NAME")=="Rrdrand")return()
-
+}
+.onAttach <-function (lib, pkg) {
   if(hasRDRAND()==FALSE){
-     warning("This CPU does not support RDRAND:  RNGkind has not been changed.",call.=FALSE)
+    packageStartupMessage("WARNING : This CPU does not support RDRAND:  RNGkind has not been changed.")
   }
 }
 
