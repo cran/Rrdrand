@@ -6,10 +6,10 @@ hasRDRAND()
 }
 \docType{package}
 \title{
-  Generate Physical Random Numbers on Intel CPUs with the RdRand instruction
+  DRNG(Digital Random Numbers Generate) on Intel CPUs with the RdRand instruction for R
 }
 \description{
-  Make use of the physical random number accessed by the RdRand
+  Make use of the hardware random number accessed by the RdRand
   instruction in recent Intel CPUs (Ivy Bridge and later).
 
   This library defines the user_unif_rand symbol and gives back a
@@ -29,9 +29,9 @@ hasRDRAND()
   \url{http://prs.ism.ac.jp/~nakama/Rrdrand}
 }
 \author{
-  Eiji NAKAMA <nakama@com-one.com> and Junji NAKANO <nakanoj@ism.ac.jp>
+  Ei-ji Nakama <nakama@com-one.com> and Junji NAKANO <nakanoj@ism.ac.jp>
  
-  Maintainer: Eiji NAKAMA <nakama@com-one.com>
+  Maintainer: Ei-ji Nakama <nakama@com-one.com>
 }
 \keyword{utilities}
 \examples{

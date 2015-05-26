@@ -1,8 +1,8 @@
 /*
  * 
- * Rrdrand : physical random number if R on Intel CPU ivy bridge or later
- * Author: Eiji NAKAMA <nakama@com-one.com>, Junji NAKANO <nakanoj@ism.ac.jp>
- * Copyright(C) 2014
+ * Rrdrand : digital random number if R on Intel CPU ivy bridge or later
+ * Author: Ei-ji Nakama <nakama@com-one.com>, Junji NAKANO <nakanoj@ism.ac.jp>
+ * Copyright(C) 2014-2015
  */
 
 #include <R.h>
