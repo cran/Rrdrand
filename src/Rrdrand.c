@@ -2,12 +2,14 @@
  * 
  * Rrdrand : digital random number if R on Intel CPU ivy bridge or later
  * Author: Ei-ji Nakama <nakama@com-one.com>, Junji NAKANO <nakanoj@ism.ac.jp>
- * Copyright(C) 2014-2015
+ * Copyright(C) 2014-2018
  */
 
 #include <R.h>
 #include <Rdefines.h>
 #include <R_ext/Random.h>
+#include <float.h>
+
 
 #ifdef WIN32
 #if defined(__i386__) || defined(__x86_64__)
@@ -25,6 +27,9 @@ static int poolsize=POOLSIZE;
 static int poolpoint=0;
 static int poolavail=0;
 static unsigned int poolbuf[POOLSIZE];
+
+static const double onedev2pow32     =  2.3283064365386963e-10; /* 1/2^32 */
+static const double onedev2pow32sub1 =  2.328306437080797e-10; /* 1/(2^32 - 1) */ 
 
 __inline static void mycpuid(int op, int *eax, int *ebx, int *ecx, int *edx){
 #if defined(HAVE_X86_CPUID) && HAVE_X86_CPUID == 1
@@ -114,7 +119,7 @@ double *user_unif_rand ()
       poolavail=poolsize;poolpoint=0;
     }
                                      /* 1.0/2^32  [0,1)*/
-    rn=(double)poolbuf[poolpoint]  * 2.3283064365386963e-10;
+    rn=(poolbuf[poolpoint]==0)?onedev2pow32sub1:(double)poolbuf[poolpoint]  *  onedev2pow32;
     poolavail--;
     poolpoint++;
 
